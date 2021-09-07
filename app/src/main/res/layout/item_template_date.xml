@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_container_xsmall"
+    android:layout_marginEnd="@dimen/margin_container_xsmall"
+    app:cardCornerRadius="@dimen/radius_xlarge"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/colorGray">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_container_small">
+
+        <TextView
+            android:id="@+id/text_view_day_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_t7"
+            android:text="WED"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/size_medium"
+            android:layout_height="@dimen/size_medium"
+            android:layout_marginTop="@dimen/margin_container_xsmall"
+            app:cardBackgroundColor="@color/colorGray"
+            app:cardCornerRadius="@dimen/radius_large"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view_day_name">
+
+            <TextView
+                android:id="@+id/text_view_day_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/font_t7"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_small" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

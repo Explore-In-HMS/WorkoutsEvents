@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.eventdetail.EventDetailActivity">
+
+
+    <TextView
+        android:id="@+id/text_view_detail_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_container_medium"
+        android:layout_marginTop="@dimen/margin_container_large"
+        android:fontFamily="@font/font_t7"
+        android:text="@string/event_detail"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_xxxlarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/button_delete"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/delete"
+        android:elevation="1dp"
+        android:src="@drawable/ic_trash"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_detail_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scroll_view_event_create"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/button_join_event"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_detail_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/event_name"
+                android:textColor="@color/hwid_auth_button_color_red"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edit_text_event_name_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="@string/event_name"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/hwid_auth_button_color_black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/text_event_date"
+                android:textColor="@color/hwid_auth_button_color_red"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edit_text_event_date_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:ems="10"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/text_event_date"
+                android:inputType="date"
+                android:textColor="@color/hwid_auth_button_color_black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/text_time"
+                    android:textColor="@color/hwid_auth_button_color_red"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/duration"
+                    android:textColor="@color/hwid_auth_button_color_red"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/edit_text_event_time_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.93"
+                    android:cursorVisible="false"
+                    android:drawableEnd="@drawable/ic_clock"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/text_event_time"
+                    android:inputType="none"
+                    android:textColor="@color/hwid_auth_button_color_black" />
+
+
+                <EditText
+                    android:id="@+id/edit_text_duration_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.07"
+                    android:enabled="false"
+                    android:hint="@string/duration"
+                    android:textColor="@color/hwid_auth_button_color_black" />
+
+                <Spinner
+                    android:id="@+id/spinner_duration_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.07"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/text_category"
+                android:textColor="@color/hwid_auth_button_color_red"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edit_text_event_category_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="@string/text_category"
+                android:inputType="text"
+                android:textColor="@color/hwid_auth_button_color_black" />
+
+            <Spinner
+                android:id="@+id/spinner_category_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/description"
+                android:textColor="@color/hwid_auth_button_color_red"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edit_text_event_description_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:gravity="start"
+                android:hint="@string/description"
+                android:inputType="textMultiLine"
+                android:textColor="@color/hwid_auth_button_color_black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/place"
+                android:textColor="@color/hwid_auth_button_color_red"
+                android:textSize="18sp" />
+
+            <com.huawei.hms.maps.MapView
+                android:id="@+id/event_detail_map"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+
+            <EditText
+                android:id="@+id/edit_text_event_address_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:text="@string/event_address"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_join_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:text="@string/text_join"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view_progress"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha=".8"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/view_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

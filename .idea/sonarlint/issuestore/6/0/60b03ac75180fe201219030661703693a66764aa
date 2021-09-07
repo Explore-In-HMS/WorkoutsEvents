@@ -1,0 +1,57 @@
+
+P
+java:S1874Â"9Remove this use of "addCallbackBuffer"; it is deprecated.(÷´ËÛ
+I
+java:S18743".Remove this use of "Camera"; it is deprecated.(Î¬Òúùÿÿÿÿ
+J
+java:S1874_"4Remove this use of "startPreview"; it is deprecated.(¾‹·Â
+[
+java:S1874¿"DRemove this use of "setPreviewCallbackWithBuffer"; it is deprecated.(ÂùŠ
+N
+java:S1874Ü"7Remove this use of "PreviewCallback"; it is deprecated.(ö´î÷
+O
+java:S1874®"3Remove this use of "stopPreview"; it is deprecated.(‡ÖÕ×øÿÿÿÿ
+]
+java:S2142¨"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+`
+java:S1874¯"DRemove this use of "setPreviewCallbackWithBuffer"; it is deprecated.(Øˆ Õşÿÿÿÿ
+J
+java:S1874¾".Remove this use of "Camera"; it is deprecated.(º¸‹Šúÿÿÿÿ
+P
+java:S1874Á"9Remove this use of "addCallbackBuffer"; it is deprecated.(÷´ËÛ
+A
+java:S1181Ä"%Catch Exception instead of Throwable.(•”ø¾øÿÿÿÿ
+E
+java:S1874".Remove this use of "Camera"; it is deprecated.(üÂß
+K
+java:S1874¶"/Remove this use of "release"; it is deprecated.(ö•¸Äùÿÿÿÿ
+j
+java:S1128 "TRemove this unnecessary import: same package classes are always implicitly imported.(–  ê
+]
+java:S2142ª"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+P
+java:S1874À"9Remove this use of "addCallbackBuffer"; it is deprecated.(÷´ËÛ
+L
+java:S1874l"7Remove this use of "PictureCallback"; it is deprecated.(ø›¢u
+P
+java:S1874Ã"9Remove this use of "addCallbackBuffer"; it is deprecated.(÷´ËÛ
+E
+java:S1874Ü".Remove this use of "Camera"; it is deprecated.(ö´î÷
+J
+java:S1874Ş".Remove this use of "Camera"; it is deprecated.(¸šïùıÿÿÿÿ
+I
+java:S1874t".Remove this use of "Camera"; it is deprecated.(…ñ¿œøÿÿÿÿ
+U
+java:S1874Ç"9Remove this use of "addCallbackBuffer"; it is deprecated.(ŒºÓøÿÿÿÿ
+P
+java:S1874²"9Remove this use of "setPreviewTexture"; it is deprecated.(¹ü€
+E
+java:S1874½".Remove this use of "Camera"; it is deprecated.(Ş¡Æ±
+C
+java:S1874l".Remove this use of "Camera"; it is deprecated.(ø›¢u
+U
+java:S1874‘"9Remove this use of "addCallbackBuffer"; it is deprecated.(¸Ÿ´üÿÿÿÿ
+N
+java:S1874o"3Remove this use of "takePicture"; it is deprecated.(ıÎ”…ûÿÿÿÿ
+U
+java:S1874±"9Remove this use of "setPreviewDisplay"; it is deprecated.(…Ñ§Ûøÿÿÿÿ

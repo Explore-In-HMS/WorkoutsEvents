@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="6dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image_view_work"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/main_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="false"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="48dp"
+                android:background="@color/work_name_color"
+                android:fontFamily="@font/lato_black"
+                android:text="@string/workoutplan"
+                android:textColor="@color/upsdk_white"
+                android:textSize="@dimen/text_size_xlarge"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/text_view_calorie_title"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/text_view_calorie_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/lato_black"
+                android:text="@string/calories"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/main_title"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/text_view_calorie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="32"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_calorie_title" />
+
+            <TextView
+                android:id="@+id/text_view_duration_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/lato_black"
+                android:text="@string/duration"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_calorie" />
+
+            <TextView
+                android:id="@+id/text_view_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="12 min"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_duration_title" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/text_view_equipment_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="92dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/lato_black"
+                android:text="@string/equipment"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_large"
+                app:layout_constraintLeft_toRightOf="@id/text_view_duration_title"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/text_view_equipment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Mat"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_constraintEnd_toEndOf="@id/text_view_equipment_title"
+                app:layout_constraintTop_toBottomOf="@id/text_view_equipment_title" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

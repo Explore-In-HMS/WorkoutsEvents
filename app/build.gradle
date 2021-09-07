@@ -1,0 +1,148 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'com.huawei.agconnect'
+    id "org.sonarqube" version "3.0"
+}
+sonarqube {
+    properties {
+        property "sonar.projectName", "WorkoutsEvents"
+        property "sonar.login", "577e52bf2c905297ce90ef73fa5560d6f0db8313"
+        property "sonar.host.url", "http://10.216.72.212:9000/"
+        property "sonar.projectVersion", android.defaultConfig.versionName
+    }
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.hms.referenceapp.workouts"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('workouts_events.jks')
+            keyAlias 't7'
+            keyPassword '123456t7'
+            storePassword '123456t7'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+        }
+        debug {
+            signingConfig signingConfigs.release
+            debuggable true
+
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-fragment:2.3.2'
+    implementation 'androidx.navigation:navigation-ui:2.3.2'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.2'
+
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.huawei.agconnect:agconnect-cloud-database:1.4.5.300'
+
+    // implementation 'com.huawei.agconnect:agconnect-database:1.2.1.301'
+    implementation('com.huawei.hms:hwid:4.0.0.300')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation 'com.huawei.hms:location:5.0.0.301'
+    implementation 'com.huawei.hms:maps:5.1.0.300'
+    implementation 'com.huawei.agconnect:agconnect-auth:1.2.1.301'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // Koin for Kotlin
+    implementation "org.koin:koin-core:$koin_version"
+    implementation "org.koin:koin-androidx-viewmodel:$koin_version"
+    implementation "org.koin:koin-core-ext:$koin_version"
+    // Koin for Unit tests
+    testImplementation "org.koin:koin-test:$koin_version"
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation "androidx.recyclerview:recyclerview:1.2.0-alpha06"
+
+    // RxJava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    implementation 'com.huawei.agconnect:agconnect-core:1.4.2.301'
+    implementation 'com.huawei.agconnect:agconnect-auth:1.4.2.301'
+    implementation 'com.huawei.hms:hwid:5.0.3.301'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.huawei.hms:push:5.0.4.302'
+
+    implementation "com.huawei.agconnect:agconnect-storage:1.3.1.100"
+    implementation 'com.huawei.hms:videokit-player:1.0.2.304'//Currently Latest Version of Video Kit
+    implementation 'com.huawei.hms:audiokit-player:1.1.0.300'
+
+    implementation "com.huawei.hms:network-grs:4.0.20.301"
+    implementation 'com.huawei.hms:device:5.1.0.300'
+    implementation 'com.huawei.hms:base:5.1.0.300'
+    implementation 'com.huawei.android.hms:security-base:1.1.5.301'
+    implementation 'com.huawei.android.hms:security-ssl:1.1.5.301'
+    implementation 'com.huawei.android.hms:security-encrypt:1.1.5.301'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.2'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation "com.huawei.hms:ml-computer-voice-tts:2.0.5.300"
+   // Skeleton detection SDK.
+    implementation 'com.huawei.hms:ml-computer-vision-skeleton:2.0.4.300'
+    // Skeleton detection model.
+    implementation 'com.huawei.hms:ml-computer-vision-skeleton-model:2.0.4.300'
+    // Yoga detection model.
+    implementation 'com.huawei.hms:ml-computer-vision-yoga-model:2.0.4.300'
+  //  implementation 'com.huawei.hms:videokit-player:1.0.1.300'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.7.2'
+    implementation(
+            [group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.4.1'],
+            [group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.4.1'],
+            [group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.4.1'],
+    )
+}

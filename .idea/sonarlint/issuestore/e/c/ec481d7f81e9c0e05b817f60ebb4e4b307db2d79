@@ -1,0 +1,38 @@
+
+U
+java:S1854h":Remove this useless assignment to local variable "bitmap".(×ı¥Êüÿÿÿÿ
+c
+java:S3252n"MUse static access with "android.provider.MediaStore$MediaColumns" for "DATA".(´Ë¡é
+x
+java:S1488ç"aImmediately return this expression instead of assigning it to the temporary variable "newBitmap".(˜æ¦Š
+B
+java:S1874p",Remove this use of "DATA"; it is deprecated.(ŞÿŞµ
+U
+java:S11185":Add a private constructor to hide the implicit public one.(åÏâ¿øÿÿÿÿ
+\
+java:S2147”"ECombine this catch with the one at line 274, which has the same body.(ï­£Ä
+F
+java:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+M
+java:S1874^"2Remove this use of "CameraInfo"; it is deprecated.(¼à”ãøÿÿÿÿ
+o
+java:S1128,"TRemove this unnecessary import: same package classes are always implicitly imported.(È»Ó”ùÿÿÿÿ
+U
+java:S1874^":Remove this use of "CAMERA_FACING_BACK"; it is deprecated.(¼à”ãøÿÿÿÿ
+=	java:S131®""Add a default case to this switch.( ‘ıÙÿÿÿÿÿ
+D
+java:S1604µ"(Make this anonymous inner class a lambda(ªŸìÿÿÿÿÿ
+B
+java:S1874n",Remove this use of "DATA"; it is deprecated.(´Ë¡é
+_
+java:S1874‡"CRemove this use of "getExternalStorageDirectory"; it is deprecated.(¹³€ıÿÿÿÿ
+O
+java:S1874o"4Remove this use of "managedQuery"; it is deprecated.(êëøÿÿÿÿ
+c
+java:S3252p"MUse static access with "android.provider.MediaStore$MediaColumns" for "DATA".(ŞÿŞµ
+b
+java:S1874¸"FRemove this use of "ACTION_MEDIA_SCANNER_SCAN_FILE"; it is deprecated.(ëÒ¿šıÿÿÿÿ
+J
+java:S1874£"3Remove this use of "insertImage"; it is deprecated.(ÑğÎ¶
+|
+java:S1488š"eImmediately return this expression instead of assigning it to the temporary variable "resizedBitmap".(Á¼¥…

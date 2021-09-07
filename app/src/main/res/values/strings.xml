@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">WorkoutsEvents</string>
+    <string name="title_activity_main2">MainActivity</string>
+
+    <string name="text_events">Events</string>
+    <string name="text_workouts">Workouts</string>
+    <string name="text_profile">Profile</string>
+    <string name="text_workout_detail">Workout Detail</string>
+    <string name="estimated_time">Estimated Time</string>
+    <string name="workoutsname">workoutsname</string>
+    <string name="calories">Calories</string>
+    <string name="equipment">Equipment</string>
+    <string name="workoutplan">Workout Plan</string>
+    <string name="duration">Duration</string>
+    <string name="startworkout">START WORKOUT</string>
+
+    <string name="text_list">List</string>
+    <string name="text_map">Map</string>
+    <string name="text_join">Join</string>
+    <string name="text_leave">Leave</string>
+    <string name="text_add">Add</string>
+    <string name="text_all">All</string>
+    <string name="text_no_event">No Event</string>
+    <string name="text_friends">Friends</string>
+    <string name="text_notifs">Notifs</string>
+    <string name="text_notifications">Notifications</string>
+    <string name="text_upcoming">Upcoming</string>
+    <string name="text_history">History</string>
+    <string name="text_yes">Yes</string>
+    <string name="text_no">No</string>
+    <string name="text_exit">Exit</string>
+
+    <string name="text_toast_petal_map_not_installed">Petal Map is not installed in your phone.</string>
+    <string name="text_toast_operation_successful">Operation successful</string>
+    <string name="text_toast_unexpected_error">An unexpected error has occurred. Please try again.</string>
+    <string name="text_toast_location_permissions">Please provide location permissions to get your actual location.</string>
+    <string name="text_toast_no_location">We could not find a proper location to use :( Please try again.</string>
+
+    <string name="text_new_event_notification_title">New Event Created! 📢</string>
+    <string name="text_new_event_notification_body">Come on, let\'s move and do some sport 💪</string>
+    <string name="text_update_event_notification_title">Event Updated! 📢</string>
+    <string name="text_update_event_notification_body">The event you participated in has been updated.</string>
+
+    <string name="text_general_notifications">General Notifications</string>
+    <string name="text_localized_notifications">Localized Notifications</string>
+
+    <string name="text_dialog_title_your_location">Your Location</string>
+    <string name="text_dialog_description_location_change">Founded location is %1$s. Do you want to change your location?</string>
+    <string name="text_mins_duration">%1$s mins</string>
+    <string name="no_city_selected">No City Selected</string>
+    <string name="event_name">Event Name</string>
+    <string name="sign_in_huawei">Sign in with Huawei ID</string>
+    <string name="logout">Logout</string>
+    <string name="create">Create</string>
+    <string name="text_category">Category</string>
+    <string name="event_creation">Event Creation</string>
+    <string name="event_detail">Event Detail</string>
+    <string name="text_time">Time</string>
+    <string name="description">Description</string>
+    <string name="participants">Participants</string>
+    <string name="place">Place</string>
+    <string name="event_address">Event Address</string>
+    <string name="delete">Delete</string>
+    <!--Code Messages-->
+    <string name="view_model_sign_success">observeViewModel: sign result success</string>
+    <string name="view_model_sign_failed">observeViewModel: sign in result error</string>
+    <string name="transmit_token_success">transmitTokenIntoAppGalleryConnect result success</string>
+    <string name="loading">Loading</string>
+    <string name="unable_location">Unable Location</string>
+    <string name="select_date_time">Please select date and time for this event</string>
+    <string name="text_event_time">Event Time</string>
+    <string name="text_event_date">Event Date</string>
+    <string-array name="duration_array">
+        <item>No limit</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>45 minutes</item>
+        <item>60 minutes</item>
+        <item>90 minutes</item>
+        <item>120 minutes</item>
+        <item>150 minutes</item>
+        <item>180 minutes</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="camera_permission_rationale">This sample app requires camera and storage access in order to
+        demo the API.</string>
+    <string name="settings">Settings</string>
+    <string name="cancel">cancel</string>
+</resources>

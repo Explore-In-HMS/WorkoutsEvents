@@ -1,0 +1,10 @@
+
+o
+java:S1128#"TRemove this unnecessary import: same package classes are always implicitly imported.(È»Ó”ùÿÿÿÿ
+K
+java:S2209J"5Change this instance-reference to a static reference.(±—©Û
+f	java:S117X"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶‚ø
+P
+java:S2209R"5Change this instance-reference to a static reference.(ğÖŞ¡üÿÿÿÿ
+@
+java:S3010C"%Remove this assignment of "analyzer".(˜ö”üÿÿÿÿ

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fireTopLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hwid_auth_button_color_black"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <com.hms.referenceapp.workouts.ui.main.workouts.LensEnginePreview
+        android:id="@+id/firePreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        >
+
+        <com.hms.referenceapp.workouts.ui.main.workouts.GraphicOverlay
+            android:id="@+id/fireOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </com.hms.referenceapp.workouts.ui.main.workouts.LensEnginePreview>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/black_back" />
+
+        <TextView
+            android:id="@+id/mlkit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="ML Kit"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:visibility="gone"></TextView>
+
+        <LinearLayout
+            android:id="@+id/switch_button_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="50dp"
+            android:layout_toRightOf="@+id/back"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/select_template"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:singleLine="false"
+                android:text="Template preview"
+                android:textAllCaps="false"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/switch_similarity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:text="Similarity comparison"
+                android:textColor="#ffffff"
+                android:textSize="13dp" />
+
+            <com.hms.referenceapp.workouts.ui.main.workouts.SwitchButton
+                android:id="@+id/switch_button_similarity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/switch_similarity">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:text="isYogaMode"
+                android:textColor="#ffffff"
+                android:textSize="13dp" />
+
+            <com.hms.referenceapp.workouts.ui.main.workouts.SwitchButton
+                android:id="@+id/switch_button_yoga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/zoomImageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/take_picture_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/similarity_layout"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-19dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_similarity"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_above="@+id/template_image_view"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="-19dp"
+            android:text="similarity:0%  "
+            android:textColor="#ffffff"
+            android:textSize="13dp"/>
+
+        <ImageView
+            android:id="@+id/template_image_view"
+            android:layout_width="135dp"
+            android:layout_height="240dp"
+            android:src="@mipmap/test_img" />
+
+    </RelativeLayout>
+
+
+    <ToggleButton
+        android:id="@+id/facingSwitch"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/facingswitch_stroke"
+        android:textOff=""
+        android:textOn="" />
+</RelativeLayout>

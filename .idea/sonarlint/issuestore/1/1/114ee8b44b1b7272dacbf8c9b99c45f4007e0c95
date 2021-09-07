@@ -1,0 +1,54 @@
+
+?
+java:S1604ù"(Make this anonymous inner class a lambda(ÅåÅ•
+G
+java:S1874¤"0Remove this use of "getWidth"; it is deprecated.(ù²Ã•
+H
+java:S1874¯"1Remove this use of "getHeight"; it is deprecated.(ÛñÛõ
+G
+java:S1068M"*Remove this unused "mCount" private field.(·˜µª8û¾­‹“/
+D
+java:S1604"(Make this anonymous inner class a lambda(¥¼´ºşÿÿÿÿ
+X
+java:S1128+"6Remove this unused import 'com.huawei.hmf.tasks.Task'.(îÄ±ùÿÿÿÿ8û¾­‹“/
+Z
+java:S1155€">Use isEmpty() to check whether the collection is empty or not.(ğ”õÂıÿÿÿÿ
+L
+java:S1874­"0Remove this use of "getWidth"; it is deprecated.(ÙÔ»½ıÿÿÿÿ
+U
+java:S1874Ÿ"9Remove this use of "getDefaultDisplay"; it is deprecated.(Ä¸¬Ìıÿÿÿÿ
+t
+java:S1450Y"YRemove the "mLoadPhoto" field and declare it as a local variable in the relevant methods.(¹´Èûÿÿÿÿ
+e
+java:S3252à"NUse static access with "android.provider.MediaStore$MediaColumns" for "TITLE".(´ø¨œ
+G
+java:S1874¢"1Remove this use of "getHeight"; it is deprecated.(¹ÎŞ 
+w
+java:S3252á"[Use static access with "android.provider.MediaStore$Images$ImageColumns" for "DESCRIPTION".(ß“ÙÜıÿÿÿÿ
+o
+java:S2293_"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÈŒíõ
+C
+java:S3011Ê",This accessibility update should be removed.(˜ÂÓ˜
+a
+java:S1874é"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ŸŒ¹Ñ
+?
+java:S1604–"(Make this anonymous inner class a lambda(ßÃİä
+Q	java:S110C"<This class has 9 parents which is greater than 5 authorized.(Œè•ı
+o
+java:S2293O"YReplace the type specification in this constructor call with the diamond operator ("<>").(Æ‡‚Ñ
+D
+java:S1604–"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ
+Z
+java:S1068P"8Remove this unused "localSketlonTranstor" private field.(êúœâşÿÿÿÿ8û¾­‹“/
+s
+java:S1450U"XRemove the "mGridView" field and declare it as a local variable in the relevant methods.(€Â óşÿÿÿÿ
+^
+java:S1126©"BReplace this if-then-else statement by a single method invocation.(Ôæúÿÿÿÿ
+Y
+java:S1126„"BReplace this if-then-else statement by a single method invocation.(„ø¥
+?
+java:S1604¶"(Make this anonymous inner class a lambda(îë Ì
+U
+java:S1874ª"9Remove this use of "getDefaultDisplay"; it is deprecated.(Ä¸¬Ìıÿÿÿÿ
+C
+java:S1604w"(Make this anonymous inner class a lambda(§ú¹Šşÿÿÿÿ

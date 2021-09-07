@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_events">
+
+    <fragment
+        android:id="@+id/navigation_events"
+        android:name="com.hms.referenceapp.workouts.ui.main.events.EventsFragment"
+        android:label="@string/text_events"
+        tools:layout="@layout/fragment_events" />
+
+    <fragment
+        android:id="@+id/navigation_workouts"
+        android:name="com.hms.referenceapp.workouts.ui.main.workouts.WorkoutsFragment"
+        android:label="@string/text_workouts"
+        tools:layout="@layout/fragment_workouts" >
+        <action
+            android:id="@+id/action_navigation_workouts_to_navigation_workouts_detail"
+            app:destination="@id/navigation_workouts_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.hms.referenceapp.workouts.ui.main.profile.ProfileFragment"
+        android:label="@string/text_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_notification_settings"
+            app:destination="@id/notification_settings"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_navigation_profile_to_friends"
+            app:destination="@id/friends"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_workouts_detail"
+        android:name="com.hms.referenceapp.workouts.ui.main.workouts.WorkoutDetailFragment"
+        android:label="@string/text_workout_detail"
+        tools:layout="@layout/fragment_workout_detail">
+    <argument
+        android:name="workoutData"
+        app:argType="string"
+        app:nullable="true" />
+        <action
+            android:id="@+id/action_navigation_workouts_detail_to_workoutDetailVideoActivity"
+            app:destination="@id/workoutDetailVideoActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/workoutDetailStartFlow"
+        android:name="com.hms.referenceapp.workouts.ui.main.workouts.WorkoutDetailStartFlow"
+        android:label="fragment_workout_detail_start_flow"
+        tools:layout="@layout/fragment_workout_detail_start_flow" />
+    <activity
+        android:id="@+id/workoutDetailVideoActivity"
+        android:name="com.hms.referenceapp.workouts.ui.main.workouts.WorkoutDetailVideoActivity"
+        android:label="activity_workout_detail_video"
+        tools:layout="@layout/activity_workout_detail_video" />
+
+
+    <fragment
+        android:id="@+id/notification_settings"
+        android:name="com.hms.referenceapp.workouts.ui.main.profile.NotificationSettingsFragment"
+        android:label="@string/text_notifications"
+        tools:layout="@layout/fragment_notification_settings" />
+
+    <fragment
+        android:id="@+id/friends"
+        android:name="com.hms.referenceapp.workouts.ui.main.profile.FriendsFragment"
+        android:label="@string/text_friends"
+        tools:layout="@layout/fragment_friends" />
+
+</navigation>

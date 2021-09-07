@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_bg" />
+
+    <!--
+    <Button
+        android:id="@+id/button_huawei_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/style_button_rounded_corner"
+        android:drawableStart="@drawable/ic_logo_white"
+        android:drawablePadding="@dimen/padding_container_medium"
+        android:gravity="center_vertical"
+        android:text="@string/sign_in_huawei"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+    -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_huawei_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_container_xxxxlarge"
+        android:layout_marginBottom="@dimen/margin_container_xxxlarge"
+        android:background="@drawable/style_button_rounded_corner"
+        android:drawableStart="@drawable/icon_huawei_white"
+        android:drawablePadding="@dimen/padding_container_medium"
+        android:fontFamily="@font/font_t7"
+        android:gravity="center_vertical"
+        android:text="@string/sign_in_huawei"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

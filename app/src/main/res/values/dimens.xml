@@ -1,0 +1,52 @@
+<resources>
+    <dimen name="size_xxlarge">96dp</dimen>
+    <dimen name="size_xlarge">48dp</dimen>
+    <dimen name="size_large">36dp</dimen>
+    <dimen name="size_medium">32dp</dimen>
+    <dimen name="size_small">24dp</dimen>
+    <dimen name="size_xsmall">18dp</dimen>
+
+    <dimen name="margin_container_xxxxsmall">2dp</dimen>
+    <dimen name="margin_container_xxxsmall">4dp</dimen>
+    <dimen name="margin_container_xxsmall">6dp</dimen>
+    <dimen name="margin_container_xsmall">8dp</dimen>
+    <dimen name="margin_container_small">12dp</dimen>
+    <dimen name="margin_container_medium">16dp</dimen>
+    <dimen name="margin_container_large">24dp</dimen>
+    <dimen name="margin_container_xlarge">36dp</dimen>
+    <dimen name="margin_container_xxlarge">48dp</dimen>
+    <dimen name="margin_container_xxxlarge">72dp</dimen>
+    <dimen name="margin_container_xxxxlarge">128dp</dimen>
+
+    <dimen name="padding_container_xxxsmall">6dp</dimen>
+    <dimen name="padding_container_xxsmall">8dp</dimen>
+    <dimen name="padding_container_xsmall">10dp</dimen>
+    <dimen name="padding_container_small">12dp</dimen>
+    <dimen name="padding_container_medium">16dp</dimen>
+    <dimen name="padding_container_large">28dp</dimen>
+
+    <dimen name="radius_xxsmall">1dip</dimen>
+    <dimen name="radius_small">6dip</dimen>
+    <dimen name="radius_medium">12dip</dimen>
+    <dimen name="radius_large">24dip</dimen>
+    <dimen name="radius_xlarge">28dip</dimen>
+
+    <dimen name="height_event_image">196dp</dimen>
+    <dimen name="height_info_window_event_image">108dp</dimen>
+    <dimen name="height_xxsmall">1dp</dimen>
+    <dimen name="height_xsmall">2dp</dimen>
+    <dimen name="height_small">3dp</dimen>
+
+    <dimen name="width_info_window">256dp</dimen>
+
+    <dimen name="elevation_small">4dp</dimen>
+
+    <dimen name="text_size_xxxsmall">5sp</dimen>
+    <dimen name="text_size_xxsmall">6sp</dimen>
+    <dimen name="text_size_xsmall">8sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_xlarge">20sp</dimen>
+    <dimen name="text_size_xxxlarge">36sp</dimen>
+</resources>

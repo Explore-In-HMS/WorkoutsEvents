@@ -1,0 +1,37 @@
+
+q
+java:S1450\"VRemove the "mCamera" field and declare it as a local variable in the relevant methods.( İ—¥şÿÿÿÿ
+x
+java:S1450L"]Remove the "templateSelect" field and declare it as a local variable in the relevant methods.(—áÄçûÿÿÿÿ
+O
+java:S1874„"1Remove this use of "setButton"; it is deprecated.(êµÂõ8¥£é„Ÿ/
+Q
+java:S2209¢"5Change this instance-reference to a static reference.(ÿ‚êıÿÿÿÿ
+V
+java:S1874¨":Remove this use of "getNumberOfCameras"; it is deprecated.(¼Ïªòÿÿÿÿÿ
+R
+java:S2696Ã"6Make the enclosing method "static" or remove this set.(¿ëµÔşÿÿÿÿ
+J
+java:S1874¨".Remove this use of "Camera"; it is deprecated.(¼Ïªòÿÿÿÿÿ
+Q
+java:S2209¡"5Change this instance-reference to a static reference.(‚å©àıÿÿÿÿ
+R
+java:S2696»"6Make the enclosing method "static" or remove this set.(Åò¢ûÿÿÿÿ
+~
+java:S1450^"cRemove the "localSketlonTranstor" field and declare it as a local variable in the relevant methods.(êúœâşÿÿÿÿ
+Y
+java:S1068_"7Remove this unused "PERMISSION_REQUESTS" private field.(€…ßÔûÿÿÿÿ8û¾­‹“/
+F
+java:S1604„"(Make this anonymous inner class a lambda(êµÂõ8Ÿçë„Ÿ/
+I
+java:S1874\".Remove this use of "Camera"; it is deprecated.( İ—¥şÿÿÿÿ
+R
+java:S2696³"6Make the enclosing method "static" or remove this set.(Íò®ıÿÿÿÿ
+p
+java:S1450Z"URemove the "facing" field and declare it as a local variable in the relevant methods.(¢°Ëıÿÿÿÿ
+P
+java:S1874"9Remove this use of "setPreviewTexture"; it is deprecated.(¾Ã¿È
+?
+java:S1185•"(Remove this method to simply inherit it.(Ñ‚«µ
+G
+java:S1068a"*Remove this unused "mCount" private field.(·˜µª8û¾­‹“/

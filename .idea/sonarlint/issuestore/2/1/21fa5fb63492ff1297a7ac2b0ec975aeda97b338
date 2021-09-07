@@ -1,0 +1,24 @@
+
+L
+java:S1066Ø"/Merge this if statement with the enclosing one.(ñ·Ão8¸ÄŸÛ/
+J
+java:S1604O"(Make this anonymous inner class a lambda(Êœüûÿÿÿÿ8¸ÄŸÛ/
+K
+java:S1604Ê"(Make this anonymous inner class a lambda(ä”œ±ıÿÿÿÿ8¸ÄŸÛ/
+g
+java:S1874Õ"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(¹Î¾8¸ÄŸÛ/
+M
+java:S1128 "7Remove this unused import 'android.widget.AdapterView'.(¶¾éæ
+F
+java:S1604À"(Make this anonymous inner class a lambda(‚Ö±¬8¸ÄŸÛ/
+Y	java:S1109"=This class has 10 parents which is greater than 5 authorized.(»…ª‡8¸ÄŸÛ/
+8
+java:S3626u"Remove this redundant jump.(ûÁİ…8¸ÄŸÛ/
+T
+java:S2696‰"6Make the enclosing method "static" or remove this set.(é»Ü¢8¸ÄŸÛ/
+K
+java:S1604Ş"(Make this anonymous inner class a lambda(´Ğêßúÿÿÿÿ8¸ÄŸÛ/
+E
+java:S1604V"(Make this anonymous inner class a lambda(¾‡µà8¸ÄŸÛ/
+`
+java:S1128."CRemove this unused import 'com.huawei.hmf.tasks.OnSuccessListener'.(à…çê8¸ÄŸÛ/

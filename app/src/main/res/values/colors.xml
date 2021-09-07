@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5D5652</color>
+    <color name="colorPrimaryDark">#0E0F0F</color>
+    <color name="colorAccent">#C74E55</color>
+    <color name="grey_80">#37474F</color>
+    <color name="colorAccentLight">#CE7B83</color>
+    <color name="colorYellow">#F4ECC2</color>
+    <color name="colorOrange">#FFA500</color>
+
+    <color name="colorGray">#FAFAFA</color>
+    <color name="colorAccentTransparent">#CCC74E55</color>
+    <color name="colorAccentLightTransparent">#59CE7B83</color>
+
+    <color name="update_start_color">#CE0E2D</color>
+    <color name="update_end_color">#D32F2F</color>
+    <color name="work_name_color">#33000000</color>
+    <color name="button_background">#5CACEE</color>
+    <color name="white">#ffffff</color>
+</resources>
