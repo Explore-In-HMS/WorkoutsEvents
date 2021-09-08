@@ -1,4 +1,6 @@
-# WorkoutsEvents
+# Workouts Events
+
+![Latest Version](https://img.shields.io/badge/latestVersion-1.0-yellow) ![Kotlin](https://img.shields.io/badge/language-kotlin-blue) ![Minimum SDK Version](https://img.shields.io/badge/minSDK-21-orange) ![Android Gradle Version](https://img.shields.io/badge/androidGradleVersion-4.0.1-green) ![Gradle Version](https://img.shields.io/badge/gradleVersion-6.1.1-informational)
 
 ## Screenshots
 
@@ -66,11 +68,12 @@ Workouts & Events app is designed with MVVM design pattern and Kotlin is used fo
 
 Workout & Events app uses Huawei services. In order to use them, you have to create an app first. Before getting started, please sign up for a Huawei developer account.
 
-After creating the application, you need to generate a signing certificate fingerprint. Then you have set to this fingerprint to the application you created in App Gallery Connect.
+After creating the application, you need to [generate a signing certificate fingerprint](https://developer.huawei.com/consumer/en/codelab/HMSPreparation/index.html#3). Then you have to set this fingerprint to the application you created in AppGallery Connect.
+- Go to "My Projects" in AppGallery Connect.
+- Find your project from the project list and click the app on the project card.
+- On the Project Setting page, set SHA-256 certificate fingerprint to the SHA-256 fingerprint you've generated.
 
-•  Go to "My Projects" in AppGallery Connect. 
-•  Find your project from the project list and click the app on the project card. 
-•  On the Project Setting page, set SHA-256 certificate fingerprint to the SHA-256 fingerprint you've generated.
+![AGC-Fingerprint](https://communityfile-drcn.op.hicloud.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20200511174103.08977471998788006824067329965155:50510612082412:2800:6930AD86F3F5AF6B2740EF666A56165E65A37E64FA305A30C5EFB998DA38D409.png?needInitFileName=true?needInitFileName=true?needInitFileName=true?needInitFileName=true)
 
 ## Using the Application
 
@@ -81,37 +84,37 @@ The user just needs to click on the exercise they want to do to start the App or
 
 ## Implemented Kits And Services
 
-### Account Kit
+### Huawei Account Kit
 
-Account Kit provides you with simple, secure, and quick sign-in and authorization functions. Instead of entering accounts and passwords and waiting for authentication, users can just tap the Sign in with HUAWEI ID button to quickly and securely sign in to your app with their HUAWEI IDs.
+Account Kit provides you with simple, secure, and quick sign-in and authorization functions. Instead of entering accounts and passwords and waiting for authentication, users can just tap the Sign in with HUAWEI ID button to quickly and securely sign in to your app with their HUAWEI IDs. For more information: [**Account Kit**](https://developer.huawei.com/consumer/en/hms/huawei-accountkit/)
 
-### Video Kit
+### Huawei Video Kit
 
-Video Kit was used to transfer the videos in the application to the users.
+Video Kit was used to transfer the videos in the application to the users. For more information: [**Video Kit**](https://developer.huawei.com/consumer/en/hms/huawei-videokit/)
 
-### ML Kit
+### Huawei ML Kit
 
-Huawei ML Kit allows your apps to easily leverage Huawei's long-term proven expertise in machine learning to support diverse artificial intelligence (AI) applications throughout a wide range of industries. Your app can gain insight into a user’s movement similarities with referance photo. Also, text to speech can convert workout text informations into audio output in real time.
+Huawei ML Kit allows your apps to easily leverage Huawei's long-term proven expertise in machine learning to support diverse artificial intelligence (AI) applications throughout a wide range of industries. Your app can gain insight into a user’s movement similarities with referance photo. Also, text to speech can convert workout text information into audio output in real time. For more information: [**ML Kit**](https://developer.huawei.com/consumer/en/hms/huawei-mlkit/)
  
-### Map Kit
+### Huawei Map Kit
 
-Map Kit provides powerful and convenient map services for you to implement personalized map display and interaction at ease. Your app can show user event’s location on map directly.
+Map Kit provides powerful and convenient map services for you to implement personalized map display and interaction at ease. Your app can show user event’s location on map directly. For more information: [**Map Kit**](https://developer.huawei.com/consumer/en/hms/huawei-MapKit/)
 
-### Cloud DB
+### Huawei Cloud DB
 
-Cloud DB is a device-cloud synergy database product that provides data synergy  management capabilities between the device and cloud, unified data models, and various data management APIs.
+Cloud DB is a device-cloud synergy database product that provides data synergy  management capabilities between the device and cloud, unified data models, and various data management APIs. For more information: [**Cloud DB**](https://developer.huawei.com/consumer/en/agconnect/cloud-base/)
 
-### Cloud Storage
+### Huawei Cloud Storage
 
-Cloud Storage allows you to store high volumes of data such as images, audios, and videos generated by your users securely and economically. Video and data shown to the user in the application are stored in cloud storage.
+Cloud Storage allows you to store high volumes of data such as images, audios, and videos generated by your users securely and economically. Video and data shown to the user in the application are stored in cloud storage. For more information: [**Cloud Storage**](https://developer.huawei.com/consumer/en/agconnect/cloud-storage/)
 
-### Location Kit
+### Huawei Location Kit
 
-Location Kit combines the Global Navigation Satellite System (GNSS), Wi-Fi, and base station location functionalities into your app to build up global positioning capabilities, allowing you to provide flexible location-based services for global users. 
+Location Kit combines the Global Navigation Satellite System (GNSS), Wi-Fi, and base station location functionalities into your app to build up global positioning capabilities, allowing you to provide flexible location-based services for global users. For more information: [**Location Kit**](https://developer.huawei.com/consumer/en/hms/huawei-locationkit/) 
 
-### Audio Kit
+### Huawei Audio Kit
 
-Audio provides you with audio playback capabilities based on the HMS ecosystem, including audio encoding and decoding capabilities at the hardware level and system bottom layer. The application allows motivational music to be played while the user is doing the exercises.
+Audio provides you with audio playback capabilities based on the HMS ecosystem, including audio encoding and decoding capabilities at the hardware level and system bottom layer. The application allows motivational music to be played while the user is doing the exercises. For more information: [**Audio Kit**](https://developer.huawei.com/consumer/en/hms/huawei-audiokit/)
 
 ### Libraries
 
@@ -131,13 +134,14 @@ Audio provides you with audio playback capabilities based on the HMS ecosystem, 
 
 
 ## Licence
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
 
- http://www.apache.org/licenses/LICENSE-2.0
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
