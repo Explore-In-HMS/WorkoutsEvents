@@ -118,19 +118,11 @@ Audio provides you with audio playback capabilities based on the HMS ecosystem, 
 
 ### Libraries
 
--	Auth Service
--	Audio Kit
--	Cloud DB
--	Cloud Storage
--	ML Kit 
--	Location Kit
--	Video Kit
--	Map Kit
--	Retrofit
--	Navigation
--	Koin
--	Material Components
--	Glide
+- [Retrofit ](https://github.com/square/retrofit)
+- [Android Navigation ](https://developer.android.com/jetpack/androidx/releases/navigation)
+- [Koin](https://insert-koin.io/)
+- [Material Components](https://material.io/components)
+- [Glide](https://github.com/bumptech/glide)
 
 
 ## Licence
